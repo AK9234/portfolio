@@ -3,101 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculator</title>
     <link rel="stylesheet" href="index.css">
-    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light header-navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-         
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-           
-            <ul class="navbar-nav">
-              <h1>port<span>folio</span></h1>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#contact">contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">about</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Service</a>
-              </li>
-             
-              
-            </ul>
-          </div>
+    <div class="calculator">
+        <input type="text" id="display" class="display"  />
+        <div class="buttons">
+            <button class="btn" onclick="appendNumber(7)">7</button>
+            <button class="btn" onclick="appendNumber(8)">8</button>
+            <button class="btn" onclick="appendNumber(9)">9</button>
+            <button class="btn operator" onclick="chooseOperation('+')">+</button>
+
+            <button class="btn" onclick="appendNumber(4)">4</button>
+            <button class="btn" onclick="appendNumber(5)">5</button>
+            <button class="btn" onclick="appendNumber(6)">6</button>
+            <button class="btn operator" onclick="chooseOperation('-')">-</button>
+
+            <button class="btn" onclick="appendNumber(1)">1</button>
+            <button class="btn" onclick="appendNumber(2)">2</button>
+            <button class="btn" onclick="appendNumber(3)">3</button>
+            <button class="btn operator" onclick="chooseOperation('*')">*</button>
+
+            <button class="btn" onclick="appendNumber(0)">0</button>
+            <button class="btn" onclick="clearDisplay()">C</button>
+            <button class="btn" onclick="calculateResult()">=</button>
+            <button class="btn operator" onclick="chooseOperation('/')">/</button>
         </div>
-      </nav>
-     
-     <main>
-       <div class="section">
-        <div class="right-section">
-          <div class="right-section-content">
-            <h2>About Me</h2>
-        <p>Hi, I'm aakib hussain ,learner and developer<br> from Bihar.I specialize in front-end development and<br>
-           have a keen interest in design and user experience.</p>
-          </div>
-          <div class="skills">
-            <h3>Skills</h3>
-            <ul>
-                <li>html & css</li>
-                <li>JavaScript</li>
-                <li>React.js</li>
-                <li>Python</li>
-                <li>UI/UX Design</li>
-        </div>
-        </div>
-        
-        <div class="left-section">
-          <h1>my project </h1>
-          <h2>Here are some of the projects I've worked on:</h2>
-          <h3><ul>
-            <li>Project  - A  responsive portfolio</li>
-            <li>Project  - A responsive website</li>
-            <li>Project  - A JavaScript game</li>
-            <li>Project  - A React application</li>
-            <li>Project - A mytra website</li>
-            <li>Project - A amozon website</li>
-           
-        </ul>
-        </h3>      
     </div>
-     </div>
-        <div class="contact" id="contact">
-          
-    </div>
-        </div>
-      
-        </main>
-     
-        <footer>
-          <div class="footer-container">
-              <div class="footer-content">
-                 
-                  <ul class="social-media">
-                      <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                      <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                      <li><a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a></li>
-                  </ul>
-                  <p>&copy; 2025 Aakib Hussain. All rights reserved.</p>
-                     <p>Contact: aakibhussain@example.com</p>
-                 
-              </div>
-          </div>
-      </footer>
-      
-<script src="index.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
